@@ -1,5 +1,5 @@
 // Write your helper functions here!
-//const fetch = require("isomorphic-fetch");
+require("isomorphic-fetch");
 
 function addDestinationInfo(
   document,
@@ -44,7 +44,7 @@ async function myFetch() {
 }
 
 function pickPlanet(planets) {
-  let randomNum = Math.floor(Math.random() * 7);
+  let randomNum = Math.floor(Math.random() * 6);
   return planets[randomNum];
 }
 
